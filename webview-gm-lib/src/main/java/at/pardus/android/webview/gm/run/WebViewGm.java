@@ -100,6 +100,7 @@ public class WebViewGm extends WebView {
 	private void init() {
 		WebSettings settings = getSettings();
 		settings.setJavaScriptEnabled(true);
+		settings.setDomStorageEnabled(true);
 		webViewClient = new WebViewClientGm(scriptStore, JSBRIDGENAME,
 				generateSecret());
 		setWebViewClient(webViewClient);

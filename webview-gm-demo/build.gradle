@@ -24,8 +24,11 @@ android {
 }
 
 dependencies {
-    compile(new File('webview-gm-lib').exists() ? project(':webview-gm-lib') : 'at.pardus' +
-            '.android:webview-gm-lib:1.2.0')
-    compile(new File('webview-gm-ui').exists() ? project(':webview-gm-ui') : 'at.pardus' +
-            '.android:webview-gm-ui:1.2.0')
+    implementation project(path: ':webview-gm-lib')
+    implementation project(path: ':webview-gm-ui')
+//    compile(new File('webview-gm-lib').exists() ? project(':webview-gm-lib') : 'at.pardus' +
+//            '.android:webview-gm-lib:1.2.0')
+//    compile(new File('webview-gm-ui').exists() ? project(':webview-gm-ui') : 'at.pardus' +
+//            '.android:webview-gm-ui:1.2.0')
+
 }
